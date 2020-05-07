@@ -25,7 +25,7 @@ SECRET_KEY = 'hgaav4^k8_8lnvz03s88!a_09u#&9k!qtwe2=!_0sdt4c_8ra$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.90.37.61']
 
 
 # Application definition
@@ -82,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': "RentCar",
-        'USER': "master1admin",
-        'PASSWORD': "master1admin",
+        'USER': "master2",
+        'PASSWORD': "master2",
         'HOST': '13.90.37.61'
     }
 }
