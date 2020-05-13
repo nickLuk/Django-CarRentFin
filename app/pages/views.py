@@ -57,14 +57,24 @@ def about(request):
     return render(request, 'pages/about.html', context)
 
 
+def blog(request):
+    
+    context = {
+        'title': "Car Articles",
+
+    }
+   
+    return render(request, 'pages/blog.html', context)
+
+
 def services(request):
     data = {'title': "Our Services"}
     return render(request, 'pages/services.html', data)
 
 
-def contact(request):
+def contactus(request):
     data = {'title': "Contact Us"}
-    return render(request, 'pages/contact.html', data)
+    return render(request, 'pages/contactus.html', data)
 
 def search(request):
     query = CarsList.objects.order_by("vendor")

@@ -25,7 +25,8 @@ SECRET_KEY = 'hgaav4^k8_8lnvz03s88!a_09u#&9k!qtwe2=!_0sdt4c_8ra$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.90.37.61']
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.90.37.61','localhost']
 
 
 # Application definition
@@ -41,7 +42,10 @@ INSTALLED_APPS = [
     'cars',
     'carmanager',
     'accounts',
-    'contacts'
+    'contacts',
+    'blog'
+
+    
     ]
 
 MIDDLEWARE = [

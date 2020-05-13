@@ -38,10 +38,10 @@
                                 href="{% url 'carlist' %}" class="nav-link">Cars</a></li>
                         <li {% if 'about' in request.path %} class="active" {% else %} {% endif %}><a
                                 href="{% url 'about' %}" class="nav-link">About</a></li>
-                        <li {% if 'blog' in request.path %} class="active" {% else %} {% endif %}><a href="blog.html"
+                        <li {% if 'blog' in request.path %} class="active" {% else %} {% endif %}><a href="{% url 'blog' %}"
                                 class="nav-link">Blog</a></li>
                         <li {% if 'contact' in request.path %} class="active" {% else %} {% endif %}><a
-                                href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+                                href="{% url 'contactus' %}" class="nav-link">Contact</a></li>
                         {% if user.is_authenticated %}
                         <li {% if 'dashboard' in request.path %} class="active" {% else %} {% endif %}>
                                     <a class="nav-link" href="{% url 'dashboard' %}"> Welcome {{ user.username }} </a>
